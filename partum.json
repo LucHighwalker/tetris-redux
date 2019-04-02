@@ -1,0 +1,11 @@
+{
+  "name": "few24redux",
+  "jsx": true,
+  "redux": true,
+  "styleExt": "scss",
+  "componentFolders": true,
+  "componentPath": "/src/components/",
+  "reduxPath": "/src/redux/",
+  "actionPath": "/actions/",
+  "reducerPath": "/reducers/"
+}
