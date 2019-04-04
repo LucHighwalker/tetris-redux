@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import GridBoard from './components/gridBoard/gridBoard';
+import NextBlock from './components/nextBlock/nextBlock';
 
 import './App.scss';
 
@@ -13,6 +14,7 @@ class App extends Component {
           <h1 className="App-title">Tetris Redux</h1>
         </header>
         <GridBoard />
+        <NextBlock />
       </div>
     );
   }
