@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import GridBoard from './components/gridBoard/gridBoard';
 import NextBlock from './components/nextBlock/nextBlock';
+import ScoreBoard from './components/scoreBoard/scoreBoard';
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ class App extends Component {
         </header>
         <GridBoard />
         <NextBlock />
+        <ScoreBoard />
       </div>
     );
   }
