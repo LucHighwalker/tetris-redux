@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import GridSquare from './components/gridSquare/gridSquare';
+import GridBoard from './components/gridBoard/gridBoard';
 
 import './App.scss';
 
@@ -12,7 +12,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Tetris Redux</h1>
         </header>
-        <GridSquare color="1" />
+        <GridBoard />
       </div>
     );
   }
