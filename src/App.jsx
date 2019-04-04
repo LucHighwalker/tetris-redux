@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import "./App.scss";
+import GridSquare from './components/gridSquare/gridSquare';
+
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -10,13 +12,14 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Tetris Redux</h1>
         </header>
+        <GridSquare color="1" />
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
-  ...state
+  ...state,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -25,5 +28,5 @@ const mapDispatchToProps = dispatch => ({
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(App);
