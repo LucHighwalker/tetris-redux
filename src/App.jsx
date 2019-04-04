@@ -5,6 +5,7 @@ import GridBoard from './components/gridBoard/gridBoard';
 import NextBlock from './components/nextBlock/nextBlock';
 import ScoreBoard from './components/scoreBoard/scoreBoard';
 import Controls from './components/controls/controls';
+import MessagePopup from './components/messagePopup/messagePopup';
 
 import './App.scss';
 
@@ -19,6 +20,7 @@ class App extends Component {
         <NextBlock />
         <ScoreBoard />
         <Controls />
+        <MessagePopup />
       </div>
     );
   }
