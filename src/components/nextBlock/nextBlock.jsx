@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 
 import GridSquare from "../gridSquare/gridSquare";
 
+import { moveDown } from '../../redux/actions'
+
 import { shapes } from '../../utils'
 
 import "./nextBlock.scss";
@@ -37,15 +39,12 @@ class NextBlock extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  // Return nextShape as shape
-  return {
-    shape: state.gameReducer.nextShape
-  }
-};
+const mapStateToProps = state => ({
+    shape: state.game.nextShape
+});
 
 const mapDispatchToProps = dispatch => ({
-  // action: () => dispatch(action())
+  moveDown
 });
 
 export default connect(

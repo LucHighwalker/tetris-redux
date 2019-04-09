@@ -4,5 +4,5 @@ import {
 import gameReducer from './gameReducer';
 
 export default combineReducers({
-	gameReducer,
+	game: gameReducer,
 });
